@@ -6,8 +6,7 @@
     <title>Exercise 1</title>
     <style>
       body {
-        font-size: 22px;
-        font-family: Helvetica, serif;
+        font: 22px Helvetica, serif;
       }
       h1 {
         font-family: "Lucida Handwriting", script;
@@ -16,20 +15,21 @@
         /*text-shadow: 2px 2px 5px gray;*/
       }
       h2 {
-        font-size: 0.75em;
-        font-style: italic; 
+	    /* Note, this time I choose to use the font shorthand property
+		   so that I could set many properties at the same time.  One
+           downside was that I had to restate Helvetica (not ideal, oh well). */
+        font: italic normal 0.75em Helvetica, serif; 
         text-align: center;
-        font-weight: normal;
         color: gray;
         /*text-shadow: 1px 1px 2px gray;*/
       }
       p::first-letter {
         color: red;
-        font-family: "Lucida Handwriting", script;
-        font-size: 1.5em;
-        font-weight: bold;
+        font: bold 1.5em "Lucida Handwriting", script;
       }
       p::first-line {
+	    /* Note, this time I choose to do the individual properties so
+		   so that I could avoid restating the font-family of Helvetica. */
         font-weight: bold;
         font-variant: small-caps;
         font-size: 1.2em;

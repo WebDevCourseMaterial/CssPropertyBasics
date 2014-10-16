@@ -6,13 +6,11 @@
     <title>Exercise 0</title>
     <style>
       body {
-        font-size: 22px;
-        font-family: Arial;
+        font: 22px  Arial;
       }
-      .header-row {
-        font-weight: bold;
-        font-size: 1.5em;
-        font-family: Impact, fantasy;
+      thead > tr {
+        font: bold 1.5em Impact, fantasy;
+		background-color: lightgray;
       }
       .font-family-1 {
         font-family: "Lucida Handwriting", script;
@@ -43,16 +41,18 @@
   <body>
     <hr>
     <table border="2px" cellpadding="4px" cellspacing="0">
-      <tbody>
-        <tr class="header-row">
-          <td>
+      <thead>
+        <tr>
+          <th>
             Property
-          </td>
-          <td>
+          </th>
+          <th>
             Value / Example
-          </td>
+          </th>
         </tr>
-        <tr class="font-family-1">
+      </thead>      
+	  <tbody>      
+	    <tr class="font-family-1">
           <td>
             font-family
           </td>
